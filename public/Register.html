@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="Css/registration.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <div id="mp">
+        <h1>SignUp</h1>
+        <p>Please fill this form to create account </p>
+        <hr>
+        <table>
+            <tr>
+                <td>  <input type="text" class="name" name="fstName" placeholder="First Name" required> </td>
+                <td> <input type="text" class="name" name="lstName" placeholder="Last Name" required> </td>
+            </tr>
+        </table>
+        
+        <br> 
+        <input type="email" name="email" placeholder="email..." required>
+        <br> <br>  <br>
+        <input type="text" id="pass1"  placeholder="Password" required>
+        <br>  <br>  <br>
+        <input type="text" id="pass2"  placeholder="Confirm Password" onchange="check()" required>
+
+   <h2 id="show1"></h2>
+
+   <br>
+   <input id="asub" type="submit" value="SignUp"></input>
+   <br><br>
+<a class="an" href="">Already User?</a>
+   
+   <script>
+    function check() {
+      var  pass1= document.getElementById("pass1").value;
+      var  pass2= document.getElementById("pass2").value;
+      var op1="Matched";
+     
+      var op2="Un Matched";
+     
+      
+      if(pass1==pass2)
+      {  
+        document.getElementById("show1").innerHTML =op1;
+        document.getElementById("show1").style.color="green";
+      }
+      else{    
+        document.getElementById("show1").innerHTML =op2 ;
+        document.getElementById("show1").style.color="red";
+      }
+     
+     
+    }
+    </script>
+    </div>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+First Name: <input type="text" id="myText1" name="naam1">
+second Name: <input type="text" id="myText2" name="naam2">
+
+<p>Click the button to display the value of the value attribute of the text field.</p>
+
+<p style="color: darkgreen;" id="demo1"></p>
+<p style="color: rgb(247, 36, 8);" id="demo2"></p>
+<button onchange="myFunction()">Try it</button>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText1").value;
+  var y= document.getElementById("myText2").value;
+  if(x==y)
+  {
+  document.getElementById("demo1").innerHTML = "Matched";
+  }else{
+  document.getElementById("demo2").innerHTML = "Un Matched";
+  }
+}
+</script>
+
+</body>
+</html> -->
